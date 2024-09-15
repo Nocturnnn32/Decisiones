@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tabla de Decisiones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Investigacion Operativa</h1>
+    <h2>Generador de Tabla de Decisiones</h2>
+
+    <div class="input-container">
+        <label for="filas">Filas:</label>
+        <input type="number" id="filas" min="1" value="3">
+        <label for="columnas">Columnas:</label>
+        <input type="number" id="columnas" min="1" value="3">
+        <button onclick="generarTabla()">Generar Tabla</button>
+    </div>
+
+    <div id="tabla-container"></div>
+    
+    <div id="probabilidades-container"></div>
+
+    <button onclick="calcularTodosCriterios()">Calcular Todos los Criterios</button>
+
+    <div class="result-container">
+        <div id="maximax-container" class="criterion-container"></div>
+        <div id="minimax-container" class="criterion-container"></div>
+        <div id="laplace-container" class="criterion-container"></div>
+        <div id="hurwicz-container" class="criterion-container"></div>
+        <div id="savage-container" class="criterion-container"></div>
+        <div id="riesgo-container" class="criterion-container"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 @ Ruben Condori Cosme. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
