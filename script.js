@@ -227,7 +227,8 @@ function mostrarLaplace(laplaceValues, procedimiento) {
     laplaceContainer.appendChild(procedimientoDiv);
 }
 
-function calcularHurwicz(alpha = 0.5) {
+function calcularHurwicz() {
+    const alpha = parseFloat(document.getElementById('hurwicz-alpha').value) || 0.5;
     const filas = document.getElementById('filas').value;
     const tabla = document.querySelector('#tabla-container table tbody');
     
